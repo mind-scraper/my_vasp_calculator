@@ -23,6 +23,7 @@ class VASP(Calculator):
         os.system("cp ../INCAR .")
         os.system("cp ../POTCAR .")
         os.system("cp ../KPOINTS .")
+        os.system("cp ../vdw_kernel.bindat .")
         
         atoms.write('POSCAR')
 
