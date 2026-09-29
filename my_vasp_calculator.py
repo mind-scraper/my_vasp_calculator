@@ -37,4 +37,4 @@ class VASP(Calculator):
         self.results['forces'] = atoms.get_forces()
 
         os.chdir(old_dir)
-        os.system(f"rm -f {workdir}")
+        os.system(f"rm -r {workdir}")
