@@ -20,10 +20,7 @@ class VASP(Calculator):
 
         old_dir = os.getcwd()
         os.chdir(workdir)
-        os.system("cp ../INCAR .")
-        os.system("cp ../POTCAR .")
-        os.system("cp ../KPOINTS .")
-        os.system("cp ../vdw_kernel.bindat .")
+        os.system("cp ../* .")
         
         atoms.write('POSCAR')
 
